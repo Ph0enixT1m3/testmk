@@ -2,6 +2,13 @@ body {
   max-width: 1920px;
   margin: 0 auto; }
 
+a {
+  text-decoration: none;
+  -webkit-transition: .3s;
+  transition: .3s; }
+  a:hover {
+    text-decoration: none; }
+
 h1 {
   font-family: 'Commissioner', sans-serif;
   font-weight: normal;
@@ -58,9 +65,10 @@ h6 {
 
 .main-text {
   font-family: 'Lato', sans-serif;
-  font-weight: 100;
-  font-size: 20px;
-  line-height: 25px; }
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 25px;
+  color: rgba(0, 0, 0, 0.8); }
 
 .secondary-text {
   font-family: 'Lato', sans-serif;
@@ -140,7 +148,8 @@ h6 {
   line-height: 20px;
   text-align: center;
   letter-spacing: 0.03em;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.5); }
 
 .header {
   height: 150px;
@@ -165,6 +174,27 @@ h6 {
           -ms-flex-pack: start;
               justify-content: flex-start;
       padding-top: 5px; }
+      .header__setting__lang__list .main-text {
+        font-size: 16px;
+        line-height: 20px; }
+        .header__setting__lang__list .main-text span {
+          font-weight: 400;
+          margin-left: 13px;
+          -webkit-transition: .3s;
+          transition: .3s; }
+          .header__setting__lang__list .main-text span:hover {
+            cursor: pointer; }
+          .header__setting__lang__list .main-text span:hover svg .lang__drop-down-circle {
+            cursor: pointer;
+            opacity: 1; }
+        .header__setting__lang__list .main-text .lang__drop-down {
+          margin-left: 5px; }
+          .header__setting__lang__list .main-text .lang__drop-down svg path {
+            -webkit-transition: .3s;
+            transition: .3s;
+            fill: rgba(0, 0, 0, 0.8); }
+          .header__setting__lang__list .main-text .lang__drop-down-circle {
+            opacity: 0; }
     .header__setting__eye {
       width: 20%;
       display: -webkit-box;
@@ -174,10 +204,6 @@ h6 {
           -ms-flex-pack: center;
               justify-content: center;
       margin-left: -70px; }
-      .header__setting__eye-start {
-        background-color: #b82222;
-        height: 20px;
-        width: 20px; }
     .header__setting__phones {
       width: 40%;
       display: -webkit-box;
@@ -187,7 +213,21 @@ h6 {
           -ms-flex-pack: end;
               justify-content: flex-end;
       padding-top: 5px; }
-      .header__setting__phones-start {
-        background-color: #b82222;
-        height: 20px;
-        width: 20px; }
+      .header__setting__phones-items {
+        margin-right: 14px; }
+        .header__setting__phones-items:last-child {
+          margin-right: 0; }
+        .header__setting__phones-items .overline {
+          margin-right: 15px; }
+          .header__setting__phones-items .overline:hover {
+            color: black; }
+        .header__setting__phones-items .social-icons {
+          margin-right: 10px; }
+          .header__setting__phones-items .social-icons:last-child {
+            margin-right: 0px; }
+          .header__setting__phones-items .social-icons path {
+            -webkit-transition: .3s;
+            transition: .3s; }
+          .header__setting__phones-items .social-icons:hover path {
+            fill-opacity: 1;
+            fill: black; }
