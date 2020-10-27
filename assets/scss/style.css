@@ -1,0 +1,193 @@
+body {
+  max-width: 1920px;
+  margin: 0 auto; }
+
+h1 {
+  font-family: 'Commissioner', sans-serif;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 0.01em; }
+
+h2 {
+  font-family: 'Commissioner', sans-serif;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: 0.03em; }
+
+h3 {
+  font-family: 'Commissioner', sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 40px;
+  letter-spacing: 0.01em; }
+
+h4 {
+  font-family: 'Commissioner', sans-serif;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 45px; }
+
+h5 {
+  font-family: 'Commissioner', sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px; }
+
+h6 {
+  font-family: 'Commissioner', sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.01em; }
+
+.subtitle-1 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 30px;
+  letter-spacing: 0.01em; }
+
+.subtitle-2 {
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 0.02em; }
+
+.main-text {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 25px; }
+
+.secondary-text {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: 0.01em; }
+
+.additional-text {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 20px; }
+
+.btn-main--text {
+  font-family: 'Commissioner', sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.08em;
+  text-transform: uppercase; }
+
+.btn-additional--text {
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase; }
+
+.btn-filled {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+  height: 45px;
+  background: #DEC377;
+  border-radius: 2px; }
+
+.btn-outlined {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid #DEC377;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 2px;
+  width: 200px;
+  height: 45px; }
+
+.caption {
+  font-family: 'Commissioner', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.01em; }
+
+.overline {
+  font-family: 'Commissioner', sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase; }
+
+.header {
+  height: 150px;
+  padding: 0 0 0 70px; }
+  .header__container {
+    margin: 0 auto;
+    max-width: 1240px; }
+  .header__setting {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 10px; }
+    .header__setting__lang {
+      width: 40%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      padding-top: 5px; }
+    .header__setting__eye {
+      width: 20%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin-left: -70px; }
+      .header__setting__eye-start {
+        background-color: #b82222;
+        height: 20px;
+        width: 20px; }
+    .header__setting__phones {
+      width: 40%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      padding-top: 5px; }
+      .header__setting__phones-start {
+        background-color: #b82222;
+        height: 20px;
+        width: 20px; }
