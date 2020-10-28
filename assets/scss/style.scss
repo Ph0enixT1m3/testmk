@@ -1,6 +1,10 @@
+* {
+    outline: none !important;
+}
 body {
     max-width: 1920px;
     margin: 0 auto;
+    background-color: #E5E5E5;
 }
 a {
     text-decoration: none;
@@ -15,6 +19,7 @@ h1 {
     font-size: 40px;
     line-height: 50px;
     letter-spacing: 0.01em;
+    color: rgba(0, 0, 0, 0.9);
 }
 h2 {
     font-family: 'Commissioner', sans-serif;
@@ -22,6 +27,7 @@ h2 {
     font-size: 28px;
     line-height: 40px;
     letter-spacing: 0.03em;
+    color: rgba(0, 0, 0, 0.9);
 }
 h3 {
     font-family: 'Commissioner', sans-serif;
@@ -41,6 +47,7 @@ h5 {
     font-weight: normal;
     font-size: 20px;
     line-height: 30px;
+    color: rgba(0, 0, 0, 0.9);
 }
 h6 {
     font-family: 'Commissioner', sans-serif;
@@ -86,6 +93,17 @@ h6 {
     line-height: 20px;
 }
 
+.menu-text {
+    font-family: 'Commissioner', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.75);
+}
+
 .btn-main--text {
     font-family: 'Commissioner', sans-serif;
     font-weight: bold;
@@ -94,6 +112,12 @@ h6 {
     text-align: center;
     letter-spacing: 0.08em;
     text-transform: uppercase;
+    color: #ffffff;
+    transition: .3s;
+    &:hover {
+        cursor: pointer;
+        color: #ffffff;
+    }
 }
 .btn-additional--text {
     font-family: 'Lato', sans-serif;
@@ -103,6 +127,12 @@ h6 {
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.5);
+    transition: .3s;
+    &:hover {
+        cursor: pointer;
+        // color: rgba(0, 0, 0, 1);
+    }
 }
 .btn-filled {
     display: flex;
@@ -112,6 +142,11 @@ h6 {
     height: 45px;
     background: #DEC377;
     border-radius: 2px;
+    transition: .3s;
+    &:hover {
+        cursor: pointer;
+        background: rgb(219, 186, 93);
+    }
 }
 .btn-outlined {
     display: flex;
@@ -122,6 +157,11 @@ h6 {
     border-radius: 2px;
     width: 200px;
     height: 45px;
+    transition: .3s;
+    &:hover {
+        cursor: pointer;
+        border: 2px solid rgb(219, 186, 93);
+    }
 }
 
 .caption {
@@ -146,14 +186,20 @@ h6 {
 .header {
     height: 150px;
     padding: 0 0 0 70px;
+    background-color: #fff;
     &__container {
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         margin: 0 auto;
         max-width: 1240px;
+        padding: 10px 0 20px 0;
     }
     &__setting {
         display: flex;
         justify-content: space-between;
-        padding-top: 10px;
+        // padding-top: 10px;
         &__lang {
             width: 40%;
             display: flex;
@@ -223,6 +269,230 @@ h6 {
                         fill: rgba(0, 0, 0, 1);
                     } 
                 }
+            }
+        }
+    }
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__link {
+            margin-right: -15px;
+            .menu-text {
+                color: rgba(0, 0, 0, 0.6);
+                margin-right: 50px;
+                transition: .3s;
+                &:hover {
+                    color: rgba(0, 0, 0, 1);
+                }
+            }
+        }
+        &__search {
+            svg path {
+                transition: .3s;
+            }
+            &:hover {
+                cursor: pointer;
+            }
+            &:hover svg path{
+                fill-opacity: 1;
+            }
+        }
+    }
+}
+
+.main {
+    &__item {
+        position: relative;
+        padding: 160px 0 100px 375px;
+        &__bg {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+        }
+        h1 {
+            max-width: 500px;
+            margin-bottom: 20px;
+        }
+        .main-text {
+            color: rgba(0, 0, 0, 0.8);
+            margin-bottom: 50px;
+        }
+        .btn-filled.btn-main--text {
+            margin-bottom: 90px;
+        }
+    }
+    &__control {
+        display: flex;
+        svg path {
+            transition: .3s;
+        }
+        &-left {
+            &:hover {
+                cursor: pointer;
+            }
+            &:hover svg path {
+                fill-opacity: 1;
+                cursor: pointer;
+            }
+        }
+        &-right {
+            &:hover {
+                cursor: pointer;
+            }
+            &:hover svg path {
+                fill-opacity: 1;
+            }
+        }
+    }
+}
+.advantages {
+    margin: 0 auto;
+    margin-top: -90px;
+    margin-bottom: 100px;
+    max-width: 1170px;
+    .col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px 26px;
+        background-color: #fff;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+        margin-right: 30px;
+        &:last-child {
+            margin-right: 0;
+        }
+        span {
+            padding: 30px;
+            border: 3px solid rgba(0, 0, 0, 0.1);
+            border-radius: 50%;
+            box-sizing: border-box;
+            margin-bottom: 25px;
+        }
+        .subtitle-2 {
+            color: rgba(0, 0, 0, 0.75);
+            margin-bottom: 0px;
+            max-width: 230px;
+            text-align: center;
+        }
+
+    }
+}
+.preview {
+    max-width: 1170px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    &__text {
+        padding: 50px 0px 60px 70px;
+        h2 {
+            max-width: 540px;
+            margin-bottom: 30px;
+        }
+        .main-text {
+            max-width: 470px;
+            padding-top: 10px;
+        }
+    }
+}
+.directions {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 100px;
+    h2 {
+        margin-bottom: 35px;
+    }
+    &__list {
+        margin-bottom: 40px;
+        .row {
+            margin-bottom: 30px;
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+        .col {
+            background-color: #fff;
+            margin-right: 30px;
+            padding: 15px 15px 22px 40px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+            &:last-child {
+                margin-right: 0;
+            }
+            &:hover .btn-additional--text {
+                color: rgba(0, 0, 0, 1);
+            }
+        }
+        .btn-additional--text {
+            text-align: left;
+            margin-bottom: 0;
+            width: fit-content;
+        }
+        &__title {
+            display: flex;
+            justify-content: space-between;
+            h5 {
+                max-width: 180px;
+            }
+            span {
+                padding: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                border-radius: 50%;
+                box-sizing: border-box;
+            }
+        }
+    }
+}
+.principles {
+    max-width: 1170px;
+    margin: 0 auto;
+    position: relative;
+    &__heading {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+        h2 {
+            max-width: 370px;
+        }
+        .main-text {
+            max-width: 770px;
+        }
+    }
+    &__slider {
+        position: relative;
+    }
+    &__control {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        svg path {
+            transition: .3s;
+        }
+        &-left {
+            left: -100px;
+            &:hover {
+                cursor: pointer;
+            }
+            &:hover path {
+                fill-opacity: 1;
+            }
+        }
+        &-right {
+            right: -100px;
+            &:hover {
+                cursor: pointer;
+            }
+            &:hover path {
+                fill-opacity: 1;
             }
         }
     }
