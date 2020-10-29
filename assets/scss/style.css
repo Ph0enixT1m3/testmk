@@ -1035,13 +1035,13 @@ h6 {
     max-width: 162px; }
     .footer__other .btn-additional--text .arrow svg {
       position: absolute;
-      top: 5%;
+      top: 3.5px;
       margin-left: -15px;
       opacity: 0;
       -webkit-transition: .2s;
       transition: .2s; }
     .footer__other .btn-additional--text .arrow .last {
-      top: 27%; }
+      top: 13px; }
     .footer__other .btn-additional--text:last-child {
       margin-bottom: 0px; }
     .footer__other .btn-additional--text:hover {
