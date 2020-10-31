@@ -189,9 +189,40 @@ h6 {
     color: rgba(0, 0, 0, 0.5);
 }
 
+.separator {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    margin-top: 100px;
+    @media (max-width: 1070px) {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+}
+
+.separator-str-last {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.row {
+    @media (max-width: 1350px) {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+}
+
+.row-flex {
+    display: flex;
+    flex-flow: row wrap;
+}
+
 .header {
     height: 150px;
     padding: 0 0 0 70px;
+    @media (max-width: 1350px) {
+        padding: 0 30px;
+    }
     background-color: #fff;
     &__container {
         min-height: 100%;
@@ -284,6 +315,9 @@ h6 {
         align-items: center;
         &__link {
             margin-right: -15px;
+            @media (max-width: 1350px) {
+                margin-right: 0;
+            }
             .menu-text {
                 color: rgba(0, 0, 0, 0.6);
                 margin-right: 50px;
@@ -308,9 +342,24 @@ h6 {
 }
 
 .main {
+    @media (max-width: 1070px) {
+        margin-bottom: 20px;
+    }
     &__item {
         position: relative;
         padding: 160px 0 100px 375px;
+        @media (max-width: 1350px) {
+            padding: 50px 0 100px 200px;
+        }
+        @media (max-width: 1170px) {
+            padding: 50px 0 50px 100px;
+        }
+        @media (max-width: 1070px) {
+            padding: 20px 0 20px 50px;
+        }
+        @media (max-width: 768px) {
+            padding: 10px 0 10px 20px;
+        }
         &__bg {
             position: absolute;
             top: 0;
@@ -322,14 +371,36 @@ h6 {
         h1 {
             max-width: 570px;
             margin-bottom: 20px;
+            @media (max-width: 1070px) {
+                font-size: 30px;
+            }
+            @media (max-width: 768px) {
+                max-width: 100%;
+            }
         }
         .main-text {
+            @media (max-width: 1070px) {
+                margin-bottom: 10px;
+            }
             color: rgba(0, 0, 0, 0.8);
             margin-bottom: 50px;
             max-width: 470px;
         }
         .btn-filled.btn-main--text {
             margin-bottom: 90px;
+            @media (max-width: 1650px) {
+                margin-bottom: 30px;
+            }
+            @media (max-width: 1070px) {
+                margin-bottom: 10px;
+            }
+        }
+        img {
+            max-width: 100%;
+            @media (max-width: 766px) {
+                max-width: none;
+                width: auto;
+            }
         }
     }
     &__control {
@@ -361,6 +432,24 @@ h6 {
     margin-top: -90px;
     margin-bottom: 100px;
     max-width: 1170px;
+    @media (max-width: 1170px) {
+        margin-top: 0px;
+    }
+    @media (max-width: 1070px) {
+        margin-bottom: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .col-lg-3 {
+        @media (max-width: 1170px) {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
     .coll {
         min-height: 100%;
         display: flex;
@@ -370,6 +459,12 @@ h6 {
         background-color: #fff;
         box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
         margin-right: 30px;
+        @media (max-width: 1170px) {
+            width: 270px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
         &:last-child {
             margin-right: 0;
         }
@@ -397,8 +492,20 @@ h6 {
     justify-content: space-between;
     background-color: #fff;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    @media (max-width: 1070px) {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
     &__text {
         padding: 50px 0px 60px 70px;
+        @media (max-width: 768px) {
+            padding: 20px 10px 20px 40px;
+        }
         h2 {
             max-width: 540px;
             margin-bottom: 30px;
@@ -408,12 +515,22 @@ h6 {
             padding-top: 10px;
         }
     }
+    &__image {
+        @media (max-width: 1070px) {
+            display: none;
+        }
+    }
 }
 .directions {
     max-width: 1170px;
     margin: 0 auto;
     padding: 0;
     margin-bottom: 100px;
+    @media (max-width: 1070px) {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 20px;
+    }
     h2 {
         margin-bottom: 35px;
     }
@@ -421,6 +538,9 @@ h6 {
         margin-bottom: 40px;
         .row {
             margin-bottom: 30px;
+            @media (max-width: 1070px) {
+                margin-bottom: 0px;
+            }
             &:last-child {
                 margin-bottom: 0px;
             }
@@ -430,6 +550,11 @@ h6 {
             margin-right: 30px;
             padding: 15px 15px 22px 40px;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+            @media (max-width: 1070px) {
+                flex-basis: auto;
+                margin-right: 0px;
+                margin-bottom: 20px;
+            }
             &:last-child {
                 margin-right: 0;
             }
@@ -464,10 +589,19 @@ h6 {
     max-width: 1170px;
     margin: 0 auto;
     position: relative;
+    @media (max-width: 1070px) {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 20px;
+    }
     &__heading {
         display: flex;
         justify-content: space-between;
         margin-bottom: 60px;
+        @media (max-width: 1070px) {
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
         h2 {
             max-width: 370px;
         }
@@ -477,11 +611,19 @@ h6 {
     }
     &__slider {
         position: relative;
+        &__item {
+            max-width: 100%;
+        }
     }
     &__control {
         position: absolute;
         top: 50%;
         transform: translate(0, -50%);
+        svg {
+            @media (max-width: 425px) {
+                max-width: 40px;
+            }
+        }
         svg path {
             transition: .3s;
         }
@@ -493,6 +635,13 @@ h6 {
             &:hover path {
                 fill-opacity: 1;
             }
+            @media (max-width: 1350px) {
+                left: 0px;
+                z-index: 1;
+                svg path {
+                    fill: blanchedalmond;
+                }
+            }
         }
         &-right {
             right: -100px;
@@ -502,6 +651,13 @@ h6 {
             &:hover path {
                 fill-opacity: 1;
             }
+            @media (max-width: 1350px) {
+                right: 0px;
+                z-index: 1;
+                svg path {
+                    fill: blanchedalmond;
+                }
+            }
         }
     }
 }
@@ -509,6 +665,13 @@ h6 {
     background-color: #fff;
     padding-top: 210px;
     margin: -110px 0px 0px 0px;
+    @media (max-width: 1070px) {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 20px;
+        padding-top: 10px;
+        margin: 0px;
+    }
     &__container {
         max-width: 1200px;
         margin: 0 auto;
@@ -526,12 +689,22 @@ h6 {
             margin-bottom: -20px;
         }
         &__item {
+            height: 100%;
             position: relative;
             box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
-            margin-right: 15px;
-            margin-left: 15px;
+            flex-basis: 585px;
+            // margin-right: 15px;
+            // margin-left: 15px;
             &__text {
                 padding: 40px 50px 65px 50px;
+                @media (max-width: 1124px) {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                @media (max-width: 768px) {
+                    padding: 20px 25px 30px 25px;
+                }
             }
             .main-text {
                 margin-bottom: 0px;
@@ -546,10 +719,14 @@ h6 {
                 max-width: 470px;
                 margin-bottom: 25px;
                 color: rgba(0, 0, 0, 0.8);
+                @media (max-width: 768px) {
+                    font-size: 12px;
+                }
             }
             &-bg {
                 filter: contrast(0.6);
                 transition: .3s;
+                width: 100%;
             }
             .btn-additional--text {
                 color: rgba(0, 0, 0, 0.5);
@@ -565,10 +742,17 @@ h6 {
             display: flex;
             justify-content: space-between;
             padding: 0 15px;
+            @media (max-width: 425px) {
+                display: block;
+            }
             &__btn {
                 width: 33.3333333%;
                 display: flex;
                 align-items: center;
+                @media (max-width: 425px) {
+                    width: auto;
+                    margin-bottom: 15px;
+                }
             }
             &__dots {
                 width: 33.3333333%;
@@ -609,6 +793,9 @@ h6 {
         .slick-dots {
             width: auto;
             bottom: -65px;
+            @media (max-width:425px) {
+                bottom: -100px;
+            }
             li {
                 height: 10px;
                 width: 10px;
@@ -628,6 +815,12 @@ h6 {
     background-color: #fff;
     padding: 100px 0px;
     margin-bottom: 80px;
+    @media (max-width: 1070px) {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 20px;
+        padding: 20px 0px;
+    }
     &__container {
         max-width: 1170px;
         margin: 0 auto;
@@ -635,9 +828,24 @@ h6 {
     &__description {
         display: flex;
         margin-bottom: 40px;
+        @media (max-width: 1070px) {
+            margin-bottom: 20px;
+            justify-content: space-around;
+        }
+        @media (max-width: 750px) {
+            display: block;
+            padding: 0px 10px;
+        }
         .main-text {
             max-width: 670px;
             margin-right: 100px;
+            @media (max-width: 1070px) {
+                margin-right: 10px;
+                max-width: 375px;
+            }
+            @media (max-width: 420px) {
+                max-width: 315px;
+            }
         }
     }
     &__logotypes {
@@ -645,7 +853,17 @@ h6 {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @media (max-width: 1070px) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
         a {
+            @media (max-width: 1070px) {
+                margin-right: 20px;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
             img {
                 filter: grayscale(1);
                 transition: .3s;
@@ -660,6 +878,11 @@ h6 {
     max-width: 1170px;
     // margin-bottom: 100px;
     margin: 0 auto;
+    @media (max-width: 1070px) {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 20px;
+    }
     &:hover .description__one-col__coner {
         transform: scale(1);
     }  
@@ -667,6 +890,10 @@ h6 {
         display: flex;
         justify-content: space-between;
         margin-bottom: 30px; 
+        @media (max-width: 768px) {
+            display: block;
+            margin-bottom: 20px;
+        }
     }
     &__one-col {
         position: relative;
@@ -675,6 +902,14 @@ h6 {
         padding: 40px 50px 0px 50px;
         background-color: #fff;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+        @media (max-width: 768px) {
+            margin-right: 0px;
+            margin-bottom: 20px;
+            padding: 10px 10px 10px 20px;
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
         &:last-child {
             margin-right: 0px;
         }
@@ -683,6 +918,8 @@ h6 {
         }
         .main-text {
             max-width: 470px;
+            @media (max-width: 768px) {
+            }
         }
         &__coner {
             position: absolute;
@@ -696,6 +933,9 @@ h6 {
         padding: 40px 50px 45px;
         background-color: #fff;
         display: flex;
+        @media (max-width: 768px) {
+            display: block;
+        }
         h4 {
             max-width: 320px;
             margin-right: 30px;
@@ -706,17 +946,15 @@ h6 {
         }
     }
 }
-.separator {
-    max-width: 100%;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 40px;
-    margin-top: 100px;
-}
 .services {
     max-width: 1170px;
     margin: 0 auto;
     margin-bottom: 100px;
+    @media (max-width: 1070px) {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 20px;
+    }
     h2 {
         margin-bottom: 35px;
     }
@@ -724,6 +962,9 @@ h6 {
         margin-bottom: 50px;
         .row {
             margin-bottom: 30px;
+            @media (max-width: 1070px) {
+                margin-bottom: 0px;
+            }
             &:last-child {
                 margin-bottom: 0px;
             }
@@ -741,6 +982,9 @@ h6 {
         &__item {
             background-color: #fff;
             display: flex;
+            @media (max-width: 1070px) {
+                margin-bottom: 20px;
+            }
             img {
                 margin-right: 30px;
             }
@@ -765,19 +1009,34 @@ h6 {
     &__all {
         display: flex;
         justify-content: space-between;
+            @media (max-width: 1070px) {
+                display: block;
+            }
         .main-text {
             max-width: 770px;
             margin-bottom: 0;
+            @media (max-width: 1070px) {
+                max-width: 505px;
+                margin-bottom: 10px;
+            }
         }
     }
 }
 .trust {
     background-color: #fff;
     margin-bottom: 80px;
+    @media (max-width: 1070px) {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 20px;
+    }
     &__container {
         max-width: 1170px;
         margin: 0 auto;
         padding: 80px 0px 100px;
+        @media (max-width: 1070px) {
+            padding: 20px 0px 20px;
+        }
     }
     .separator-str {
         border-bottom: 1px rgba(0, 0, 0, 0.1) solid;
@@ -814,11 +1073,26 @@ h6 {
     max-width: 1170px;
     margin: 0 auto;
     margin-bottom: 100px;
+    @media (max-width: 1070px) {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 20px;
+    }
     h2 {
         margin-bottom: 35px;
     }
     &__items {
         margin-bottom: 40px;
+        .col-lg-3 {
+            @media (max-width: 970px) {
+                justify-content: center;
+                display: flex;
+                margin-bottom: 20px;
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+            }
+        }
     }
     &__items-one {
         min-height: 100%;
@@ -829,6 +1103,9 @@ h6 {
         background-color: #fff;
         box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
         margin-right: 30px;
+        @media (max-width: 970px) {
+            width: 300px;
+        }
         &:last-child {
             margin-right: 0;
         }
@@ -871,6 +1148,25 @@ h6 {
     max-width: 1170px;
     margin: 0 auto;
     margin-bottom: 100px;
+    @media (max-width: 1070px) {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 20px;
+    }
+    .col-lg-6 {
+        @media (max-width: 1070px) {
+            margin-bottom: 20px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        @media (max-width: 425px) {
+            margin-bottom: 110px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
     &__text {
         max-width: 500px;
         max-height: 365px;
@@ -917,6 +1213,9 @@ h6 {
         padding: 45px 50px 50px;
         background-color: #fff;
         max-height: 365px;
+        @media (max-width:425px) {
+            padding: 15px 10px 10px;
+        }
         label {
             display: block;
             margin-bottom: 7px;
@@ -971,6 +1270,11 @@ h6 {
     max-width: 1170px;
     margin: 0 auto;
     margin-bottom: 100px;
+    @media (max-width: 1070px) {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 20px;
+    }
     &__container {
         max-width: 670px;
         h2 {
@@ -980,9 +1284,6 @@ h6 {
             margin-bottom: 30px;
         }
     }
-}
-.separator-str-last {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 .footer {
     max-width: 1170px;
@@ -1102,6 +1403,9 @@ h6 {
         }
         &__items {
             display: flex;
+            @media (max-width: 768px) {
+                display: block;
+            }
             &-one {
                 margin-right: 35px;
                 max-width: 200px;
